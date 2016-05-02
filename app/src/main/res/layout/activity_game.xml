@@ -1,0 +1,214 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="angelcotes.viewmovil.GameActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TableLayout
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center|center_vertical"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+            <GridLayout
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:targetApi="ice_cream_sandwich"
+                android:layoutMode="opticalBounds">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_column="9" >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/back"
+                        android:layout_row="1"
+                        android:layout_column="6"
+                        android:src="@drawable/exit"
+                        android:focusableInTouchMode="false"
+                        android:onClick="backToMenu"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/enableSound"
+                        android:layout_row="2"
+                        android:layout_column="6"
+                        android:src="@drawable/tecn"
+                        android:onClick="setSound"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageButton3"
+                        android:layout_row="0"
+                        android:layout_column="6"
+                        android:src="@drawable/mark" />
+
+                </GridLayout>
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="30">
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/abc_dialog_padding_material"
+                    android:text="Total price"
+                    android:textColor="#595252"
+                    android:textStyle="bold"
+                    android:textColorHighlight="#494343"
+                    android:id="@+id/toPay"
+                    android:layout_row="0"
+                    android:layout_column="30"
+                    android:background="#e3b958" />
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textSize="@dimen/abc_text_size_medium_material"
+                    android:text="Paid"
+                    android:textColor="#a99e08"
+                    android:textStyle="bold"
+                    android:textColorHighlight="#494343"
+                    android:id="@+id/money"
+                    android:layout_row="1"
+                    android:layout_column="30"
+                    android:layout_gravity="left|center|top"
+                    android:background="#373537"
+                    android:autoText="false" />
+
+            </GridLayout>
+            <Button
+                android:layout_width="@android:dimen/notification_large_icon_height"
+                android:layout_height="match_parent"
+                android:id="@+id/target"
+                android:background="@drawable/border2"
+                android:layout_row="0"
+                android:layout_column="32"
+                android:layout_gravity="bottom" />
+        </GridLayout>
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_weight="0.2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button8"
+                android:layout_column="17"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <GridLayout
+
+                android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:targetApi="ice_cream_sandwich"
+                android:layoutMode="opticalBounds"
+                android:layout_gravity="center">
+
+                <Button
+                    android:layout_width="@android:dimen/notification_large_icon_width"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/cien"
+                    android:id="@+id/one_hundred_thousand"
+                    android:layout_margin="4dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center_vertical" />
+
+                <Button
+                    android:layout_margin="4dp"
+                    android:layout_width="@android:dimen/notification_large_icon_width"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/cincuenta"
+                    android:id="@+id/fifty_thousand"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="center_vertical" />
+
+                <Button
+                    android:layout_margin="4dp"
+                    android:layout_width="@android:dimen/notification_large_icon_height"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/veinte"
+                    android:id="@+id/twenty_thousand"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:layout_gravity="center_vertical" />
+
+                <Button
+                    android:layout_margin="4dp"
+                    android:layout_width="@android:dimen/notification_large_icon_height"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/diez"
+                    android:id="@+id/ten_thousand"
+                    android:layout_row="0"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical" />
+
+                <Button
+                    android:layout_margin="4dp"
+                    android:layout_width="@android:dimen/notification_large_icon_height"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/cinco"
+                    android:id="@+id/five_thousand"
+                    android:layout_row="0"
+                    android:layout_column="4"
+                    android:layout_gravity="center_vertical" />
+
+                <Button
+                    android:layout_margin="4dp"
+                    android:layout_width="@android:dimen/notification_large_icon_height"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/dos"
+                    android:id="@+id/two_thousand"
+                    android:layout_row="0"
+                    android:layout_column="5"
+                    android:layout_gravity="center_vertical" />
+
+                <Button
+                    android:layout_margin="4dp"
+                    android:layout_width="@android:dimen/notification_large_icon_height"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/mil"
+                    android:id="@+id/one_thousand"
+                    android:layout_row="0"
+                    android:layout_column="6"
+                    android:layout_gravity="center_vertical" />
+
+            </GridLayout>
+
+    </TableLayout>
+
+</FrameLayout>
