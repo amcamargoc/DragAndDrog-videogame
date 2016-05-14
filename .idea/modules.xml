@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Trabajo_Movil-master.iml" filepath="$PROJECT_DIR$/Trabajo_Movil-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DragAndDrog-videogame.iml" filepath="$PROJECT_DIR$/DragAndDrog-videogame.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
