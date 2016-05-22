@@ -6,8 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import angelcotes.models.BackgroundSound;
+import angelcotes.models.EffectSoundManager;
 import angelcotes.models.GameManagement;
 
 /**
@@ -36,13 +38,14 @@ public class MenuActivity extends AppCompatActivity {
     private View mContentView;
     private boolean mVisible;
     private Button btn_play;
-
+    ImageButton enableSound;
 
     // Game Management instance. Control all the game
     public static GameManagement gameManagement = new GameManagement();
 
     // Background Sound
     private BackgroundSound backgroundSound = null;
+    public static boolean sound = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +57,7 @@ public class MenuActivity extends AppCompatActivity {
         mVisible = true;
         mContentView = findViewById(R.id.fullscreen_content);
         btn_play = (Button) findViewById(R.id.btn_play);
+        enableSound = (ImageButton) findViewById(R.id.imageButton2);
 
 
         // SOUND EFFECT
@@ -72,9 +76,11 @@ public class MenuActivity extends AppCompatActivity {
 
     public void play(View view) {
         // Establish attributes for the new game
+        gameManagement.setLevel(0);
         gameManagement.newGame();
 
         Intent intent = new Intent(getApplicationContext(), GameActivity.class);
+        intent.putExtra("sound", this.sound);
         startActivity(intent);
     }
 
@@ -100,5 +106,18 @@ public class MenuActivity extends AppCompatActivity {
     public void help(View view) {
         Intent intent = new Intent(getApplicationContext(), Help.class);
         startActivity(intent);
+    }
+
+    public void setSound(View view) {
+        if (sound) {
+            backgroundSound.mute();
+
+            enableSound.setImageResource(R.drawable.sin);
+            this.sound = false;
+        } else {
+            backgroundSound.unmute();
+            enableSound.setImageResource(R.drawable.tecn);
+            this.sound = true;
+        }
     }
 }

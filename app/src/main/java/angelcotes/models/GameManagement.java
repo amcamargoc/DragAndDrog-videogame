@@ -10,6 +10,10 @@ public class GameManagement {
 
     int moneyToPay, level;
 
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
     public GameManagement() {
         level = 0;
         moneyToPay = 0;
@@ -17,8 +21,19 @@ public class GameManagement {
 
     public void newGame() {
         // Generate number multiples of 10.000. maximum number 250.000
-        this.moneyToPay = (1 + new Random().nextInt(250)) * 1000;
-        this.level += 1;
+        if (this.level == 0) {
+            this.moneyToPay = (1 + new Random().nextInt(25)) * 1000;
+        } else if (this.level == 1) {
+            this.moneyToPay = (1 + new Random().nextInt(50)) * 1000;
+        } else if(this.level == 2) {
+            this.moneyToPay = (1 + new Random().nextInt(150)) * 1000;
+        } else if (this.level == 3) {
+            this.moneyToPay = (1 + new Random().nextInt(200)) * 1000;
+        } else {
+            this.moneyToPay = (1 + new Random().nextInt(250)) * 1000;
+        }
+
+
     }
 
     // Method for change activities
@@ -47,6 +62,7 @@ public class GameManagement {
         int status = 0;
         if (isWinner(cashRegister)) {
             status = 1;
+            this.level += 1;
         } else if (isLoser(cashRegister)) {
             status = -1;
         }

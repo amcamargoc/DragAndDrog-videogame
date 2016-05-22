@@ -63,6 +63,9 @@ public class Help extends AppCompatActivity {
         viewPager.setCurrentItem(1);
     }
 
+    public void backToMenu(View view) {
+            this.finish();
+    }
 
 
     // Class used for activitytab swipe

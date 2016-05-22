@@ -25,7 +25,6 @@
             android:layout_height="match_parent"
             android:layout_weight="0.5">
             <GridLayout
-                android:layout_gravity="bottom|center_horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:targetApi="ice_cream_sandwich"
@@ -67,25 +66,27 @@
                 <TextView
                     android:layout_margin="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="116dp"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textSize="50dp"
-                    android:text="Total price"
+                    android:textSize="40dp"
+                    android:text="Total price $58000"
                     android:textColor="#595252"
                     android:textStyle="bold"
                     android:textColorHighlight="#494343"
                     android:id="@+id/toPay"
                     android:layout_row="0"
                     android:layout_column="30"
-                    android:background="#e3b958" />
+                    android:background="#e3b958"
+                    android:autoText="false"
+                    android:breakStrategy="high_quality" />
 
                 <TextView
                     android:layout_margin="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="388dp"
+                    android:layout_height="125dp"
                     android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textSize="50dp"
-                    android:text="Paid"
+                    android:textSize="35dp"
+                    android:text="Paid $550670"
                     android:textColor="#a99e08"
                     android:textStyle="bold"
                     android:textColorHighlight="#494343"
@@ -94,7 +95,9 @@
                     android:layout_column="30"
                     android:layout_gravity="left|center|top"
                     android:background="#373537"
-                    android:autoText="false" />
+                    android:autoText="false"
+                    android:breakStrategy="balanced"
+                    android:elegantTextHeight="false" />
 
             </GridLayout>
             <Button

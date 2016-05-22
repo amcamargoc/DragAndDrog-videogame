@@ -47,7 +47,7 @@
                         android:src="@drawable/exit"
                         android:focusableInTouchMode="false"
                         android:background="#ffffff"
-                        android:onClick="backToMenu"/>
+                        android:onClick="backToMenu" />
                     <ImageButton
                         android:layout_margin="8dp"
                         android:layout_width="wrap_content"

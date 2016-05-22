@@ -118,6 +118,10 @@ public class GameActivity extends AppCompatActivity {
         backgroundSound = new BackgroundSound(this, R.raw.background_sound);
         backgroundSound.play();
 
+        sound = (Boolean) getIntent().getExtras().get("sound");
+        sound = !sound;
+        setSound(getCurrentFocus());
+
 
         // Button event for drag
         bill_1000.setOnLongClickListener(longListener);
