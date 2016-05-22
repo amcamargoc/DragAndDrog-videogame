@@ -48,6 +48,7 @@
             android:textColor="#595252"
             android:textStyle="bold"
             android:textAlignment="center"
+            android:onClick="help"
             android:singleLine="false" />
 
         <Button

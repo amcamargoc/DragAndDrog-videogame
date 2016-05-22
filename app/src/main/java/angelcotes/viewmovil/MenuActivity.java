@@ -96,4 +96,9 @@ public class MenuActivity extends AppCompatActivity {
     public void exitGame(View view) {
         this.finish();
     }
+
+    public void help(View view) {
+        Intent intent = new Intent(getApplicationContext(), Help.class);
+        startActivity(intent);
+    }
 }
