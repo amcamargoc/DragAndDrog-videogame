@@ -113,14 +113,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:layout_weight="0.2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="New Button"
-                android:id="@+id/button8"
-                android:layout_column="17"
-                android:visibility="invisible" />
         </TableRow>
 
         <GridLayout
@@ -135,7 +127,7 @@
 
                 <Button
                     android:layout_width="@android:dimen/notification_large_icon_width"
-                    android:layout_height="match_parent"
+                    android:layout_height="140dp"
                     android:background="@mipmap/cien"
                     android:id="@+id/one_hundred_thousand"
                     android:layout_margin="4dp"
@@ -146,7 +138,7 @@
                 <Button
                     android:layout_margin="4dp"
                     android:layout_width="@android:dimen/notification_large_icon_width"
-                    android:layout_height="match_parent"
+                    android:layout_height="140dp"
                     android:background="@mipmap/cincuenta"
                     android:id="@+id/fifty_thousand"
                     android:layout_row="0"
@@ -156,7 +148,7 @@
                 <Button
                     android:layout_margin="4dp"
                     android:layout_width="@android:dimen/notification_large_icon_height"
-                    android:layout_height="match_parent"
+                    android:layout_height="140dp"
                     android:background="@mipmap/veinte"
                     android:id="@+id/twenty_thousand"
                     android:layout_row="0"
@@ -166,7 +158,7 @@
                 <Button
                     android:layout_margin="4dp"
                     android:layout_width="@android:dimen/notification_large_icon_height"
-                    android:layout_height="match_parent"
+                    android:layout_height="140dp"
                     android:background="@mipmap/diez"
                     android:id="@+id/ten_thousand"
                     android:layout_row="0"
@@ -176,7 +168,7 @@
                 <Button
                     android:layout_margin="4dp"
                     android:layout_width="@android:dimen/notification_large_icon_height"
-                    android:layout_height="match_parent"
+                    android:layout_height="140dp"
                     android:background="@mipmap/cinco"
                     android:id="@+id/five_thousand"
                     android:layout_row="0"
@@ -186,7 +178,7 @@
                 <Button
                     android:layout_margin="4dp"
                     android:layout_width="@android:dimen/notification_large_icon_height"
-                    android:layout_height="match_parent"
+                    android:layout_height="140dp"
                     android:background="@mipmap/dos"
                     android:id="@+id/two_thousand"
                     android:layout_row="0"
@@ -196,7 +188,7 @@
                 <Button
                     android:layout_margin="4dp"
                     android:layout_width="@android:dimen/notification_large_icon_height"
-                    android:layout_height="match_parent"
+                    android:layout_height="140dp"
                     android:background="@mipmap/mil"
                     android:id="@+id/one_thousand"
                     android:layout_row="0"
