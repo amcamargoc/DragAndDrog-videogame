@@ -20,9 +20,9 @@
 
         <Button
             android:gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="122dp"
             android:layout_height="match_parent"
-            android:text="PLAY"
+            android:text="JUGAR"
             android:textSize="25dp"
             android:id="@+id/btn_play"
             android:layout_gravity="center_horizontal"
@@ -35,9 +35,9 @@
 
         <Button
             android:gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="119dp"
             android:layout_height="wrap_content"
-            android:text="HELP"
+            android:text="AYUDA"
             android:textSize="25dp"
             android:id="@+id/btn_help"
             android:layout_margin="5dp"
@@ -51,9 +51,9 @@
 
         <Button
             android:gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="113dp"
             android:layout_height="wrap_content"
-            android:text="QUIT"
+            android:text="SALIR"
             android:textSize="25dp"
             android:textAlignment="center"
             android:id="@+id/btn_quit"

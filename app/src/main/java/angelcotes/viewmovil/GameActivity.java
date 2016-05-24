@@ -141,8 +141,8 @@ public class GameActivity extends AppCompatActivity {
 
     public static void setValues() {
         GameActivity.cashRegister = new CashRegister();
-        money.setText("Paid $" + GameActivity.cashRegister.getTotal());
-        toPay.setText("Total price $" + MenuActivity.gameManagement.getMoneyToPay());
+        money.setText("Pagado $" + GameActivity.cashRegister.getTotal());
+        toPay.setText("Total a pagar $" + MenuActivity.gameManagement.getMoneyToPay());
     }
 
 
@@ -245,7 +245,7 @@ public class GameActivity extends AppCompatActivity {
                     cashRegister.addBill(billDragged);
 
                     // Update total money
-                    money.setText("Paid $" + cashRegister.getTotal());
+                    money.setText("Pagado $" + cashRegister.getTotal());
 
                     // EFFECT SOUND
                     effectSoundManager.playEffect("cash register");
